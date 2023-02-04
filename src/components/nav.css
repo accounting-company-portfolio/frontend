@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-size: 1.55rem;
+  font-family: 'Times New Roman', Times, serif;
+  background-Image:"url(../images/back.jpg)",
+
+}
+.logo {
+  width: 130px;
+  height: 130px;
+  margin-top: 10px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #3e3a7c;
+  box-shadow: 5px 5px 88px 3px #000 inset;
+  justify-content: space-around;
+  height: 11vh;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 15px;
+  height: 50px;
+  flex-wrap: wrap;
+  color: #e7eef1;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+  
+}
+
+.hoverable {
+  display: inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  box-shadow: 0 0 1px #33508e00;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  text-decoration: none;
+  color: #e6e6ec;
+  gap: 15px;
+}
+
+.hoverable:before {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  width: 90%;
+  opacity: 0;
+  box-shadow: 10px 5px 41px 9px #05070c;
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+.hoverable:hover,
+.hoverable:active,
+.hoverable:focus {
+  transform: translateY(-5px);
+}
+.hoverable:hover:before,
+.hoverable:active:before,
+.hoverable:focus:before {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    height: 93vh;
+    width: 50vw;
+    background: rgb(0, 33, 65);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+}
+/* Active Class */
+.nav__active {
+  transform: translateX(0%);
+}
+
+/* Toggle Icon Animation */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
