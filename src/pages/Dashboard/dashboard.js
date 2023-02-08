@@ -1,26 +1,31 @@
 import { Component } from "react";
 import "./dashboard.css";
-class Dashboard extends Component {
+
+import Sidebar from "./sidebar";
+class MainDash extends Component {
   render() {
     return (
-      <div class="login-box">
-      <h2>Login</h2>
-      <form>
-        <div class="user-box">
-          <input type="text" name="" required=""/>
-          <label>Email</label>
+      <div className="page_container">
+
+      <div className="container">
+      <div class="top">
+          <i class="uil uil-bars sidebar-toggle"></i>
+
+          <div class="search-box">
+            <i class="uil uil-search"></i>
+            <input type="text" placeholder="Search here..." />
+          </div>
+
+          <img src="images/profile.jpg" alt="" />
         </div>
-        <div class="user-box">
-          <input type="password" name="" required=""/>
-          <label>Password</label>
-        </div>
-        <a href="/">
-          Login
-        </a>
-      </form>
-    </div>
+        <div className="maindash">
+          
+         <Sidebar/>
+       </div>
+      </div>
+      </div>
     );
   }
 }
 
-export default Dashboard;
+export default MainDash;

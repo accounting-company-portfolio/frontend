@@ -9,6 +9,7 @@ class Nav extends Component {
       <header className="container-fluid">
         <nav className="navbar navbar-inverse">
         <img src={logo} alt="logo" className="logo"/>
+
           <ul className="nav navbar-nav">
             <li>
               <Link to="/" className="hoverable">
