@@ -4,6 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash ,faPenSquare} from '@fortawesome/free-solid-svg-icons'
 import Sidebar from "../sidebar";
 class Servicecomponent extends Component {
+  componentDidMount() {
+    fetch('https://localhost:5000/services')
+      .then(res => res.json())
+      .then(data => {
+        this.setState({
+          data: data
+        })
+      })
+      .catch(error => console.log(error))
+  }
   render() {
     
     return (
