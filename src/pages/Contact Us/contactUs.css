@@ -34,8 +34,10 @@
   border: none;
 }
 #message {
-  
-  height: 225px;
+  width: 103%;
+  height: 235px;
+  border-radius: 0.8rem;
+  border: none;
 }
 #btn {
   padding: 1rem;

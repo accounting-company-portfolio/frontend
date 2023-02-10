@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import Contact from "./pages/Contact Us/contactUs.js";
+import Contact, { ContactUs } from "./pages/Contact Us/contactUs.js";
 function App() {
   return (
   <div className="App">
-    <Contact />
+    <ContactUs />
   </div>
   );
 }
