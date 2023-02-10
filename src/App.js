@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import NewsPage from "./components/News/newsPage";
+import NewsPage from "./components/News/NewsPage/newsPage";
 
 
 function App() {
