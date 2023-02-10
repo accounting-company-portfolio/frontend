@@ -10,7 +10,7 @@ class NewsPage extends Component {
 
   componentDidMount() {
     // Fetch data from the backend API
-    fetch("<API_END_POINT>")
+    fetch("http://localhost:5000/news")
       .then((response) => response.json())
       .then((newsData) => {
         this.setState({ newsData });
@@ -20,8 +20,9 @@ class NewsPage extends Component {
   render() {
     const { newsData } = this.state;
     return (
+      
       <div className="news-section">
-        {this.state.news.map((news) => (
+        {newsData.map((news) => (
           <div key={news._id} className="news-card">
             <h2>{news.mediaTitle}</h2>
             <img src={news.mediaUrl} alt={news.mediaTitle} />
