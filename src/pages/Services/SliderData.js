@@ -1,12 +1,10 @@
 export const SliderData = [
   {
     image:
-      "https://media.smallbiztrends.com/2022/04/accounting-services-for-small-business.png",
-  },
+"https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/uq6eHE3VmBRuCcccUXkFD1YNv8Q=/1660x934/smart/filters:no_upscale()/arc-anglerfish-arc2-prod-dmn.s3.amazonaws.com/public/2NNDTLVKBCNOLM26OYRTCUQLQI.jpg"  },
   {
     image:
-      "https://thumbs.dreamstime.com/b/business-man-text-adaptation-concept-image-46175741.jpg",
-  },
+"https://www.slideteam.net/mjpgedia/catalog/product/cache/1280x720/c/o/company_profile_of_financial_accounting_advisory_services_powerpoint_presentation_slides_slide06."  },
   {
     image:
 'https://www.plm.automation.siemens.com/media/global/en/managed-services-landing-page-is546461564-ogimage1200x630_tcm27-64833.jpg'  },
@@ -16,13 +14,12 @@ export const SliderData = [
   },
   {
     image:
-      "http://araca.co.in/wp-content/uploads/2021/08/accounting-services.jpg",
-  },
+    "https://thebuildingco.com/wp-content/uploads/2021/04/TBCo-Website-Banners-March-2021-SCROLL-DOWN-FOR-MORE.jpg"  },
   {
-    image: "https://www.growthforce.com/hubfs/Outsourced%20accounting.jpg",
+    image: "https://static.euronews.com/articles/stories/07/03/78/74/773x435_cmsv2_31e075c9-00c3-595c-a40a-fbbc0af8d492-7037874.jpg",
   },
   {
     image:
-      "https://advisors-cafe.com/wp-content/uploads/2022/01/our-services.jpg",
+      "https://20504069.fs1.hubspotusercontent-na1.net/hub/20504069/hubfs/Imported_Blog_Media/ABCs-of-Accounting.jpg?height=630&name=ABCs-of-Accounting.jpg",
   },
 ];

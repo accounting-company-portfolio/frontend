@@ -8,6 +8,7 @@ body {
   color: #333;
 }
 
+
 a {
   text-decoration: none;
   color: #111;
@@ -46,7 +47,7 @@ p {
   width:800px;
   margin:0 auto;
   padding:10px;
-  border-bottom:1px solid rgba(84,183,222,0.5);
+  border-bottom:1px solid #54b7de80;
   background-color:rgba(84,183,222,0.3);
 }
 
@@ -56,15 +57,25 @@ p {
   border:none;
   border-radius:5px;
   padding:10px 20px;
-  background-color:#2699c7;
+  background-color:#0b1c22;
   color:#fff;
   font-size:14px;
   outline: none;
 }
-
-#profile-edit-area {
-  width:800px;
+.dashboardinfo{
+    background-color: #7997a1;
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(163, 167, 186);
+    padding: 10px;
+}
+.admincontair{
+    display:flex;
+}
+.profile-edit-area {
   margin: 0 auto;
+  background-color: #7997a1;
+  text-align: left;
 }
 
 #edit-area-left, #edit-area-right {

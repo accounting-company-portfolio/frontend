@@ -40,7 +40,7 @@ class Sidebar extends Component {
      </Link>
     </li>
     <li className="link-enter"> <Link
-          to="./servicescomponent/servicecomponent.js">
+          to="/profile">
       <FontAwesomeIcon icon={faUser} />
       &nbsp;&nbsp;
           Info

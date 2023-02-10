@@ -7,10 +7,10 @@
 }
 
 .image {
-  width: 1300px;
-  height: 700px;
-  border-radius: 10px;
-  box-shadow: 1px -5px 68px 14px #000 ;
+  width: 1050px;
+  height: 600px;
+  box-shadow: 1px -5px 48px 14px #000  ;
+  border: 9px solid rgb(2, 2, 39);
 }
 
 .right-arrow {
@@ -47,4 +47,12 @@
   transform: scale(1.08);
 }
 
-
+.servecepar{
+text-align: center;
+font-size: 32px;
+letter-spacing: 3px;
+white-space: pre-wrap;
+font-family: "Lusitana", serif;
+margin: 10px;
+padding:20px;
+}

@@ -126,6 +126,9 @@ ul {
 max-width: 40px;
 
 }
+.finalp{
+  text-align: center;
+}
 
 /*responsive*/
 @media (max-width: 767px) {

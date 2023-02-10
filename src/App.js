@@ -14,7 +14,6 @@ import Servicecomponent from "./pages/Dashboard/servicecomponent/servicecomponen
 import Adminprofile from "./pages/Dashboard/admineditprofile/adminprofile";
 import Login from "./pages/Login/login";
 import { Component } from "react";
-
 class App extends Component {
   render() {
     return (
@@ -34,16 +33,17 @@ class App extends Component {
           <Route path="/servicecomponent" element={<Servicecomponent />} />
           <Route path="/profile" element={<Adminprofile />} />
           <Route path="/login" element={<Login />} />
-
         </Routes>
-        <br/><br/>   
-        <br/><br/> 
-        <br/><br/> 
-        <br/><br/> 
-        <br/><br/> 
-        <br/><br/> 
-        <br/><br/> 
-        <br/><br/>      <Footer />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <Footer />
       </div>
     );
   }

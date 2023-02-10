@@ -59,7 +59,7 @@ class Footer extends Component {
                   <a href="/"><img src={linkedin} className="sociallogo" alt=""></img></a>
                   <a href="/"><img src={twitter} className="sociallogo" alt=""></img></a>
                 </div>
-              <p>
+              <p className="finalp">
                 
           <strong>Financial & management services and consulting  &nbsp;</strong><span>  &nbsp;Copyright &copy; 2010-2023  Mehan Company S.L. All rights reserved.</span>
           
