@@ -78,7 +78,7 @@
 
 .news-section .section-content .cards .card .posted-date p {
   font-weight: 600;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   display: inline-block;
