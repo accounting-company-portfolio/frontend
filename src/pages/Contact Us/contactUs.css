@@ -1,0 +1,127 @@
+.App {
+  padding: 0 2rem;
+}
+.contactus {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  font-size: 110%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  background-color: #234b6a;
+  background-size: auto;
+}
+.container h3 {
+  font-size: 170%;
+  margin-right: 90%;
+}
+.contact {
+  width: 50%;
+  padding: 4em;
+  background-color: #47494d;
+}
+.contact label {
+  display: flex;
+  padding: 2%;
+  margin-left: -2%;
+}
+.contact input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-top: -1%;
+  border-radius: 0.8rem;
+  border: none;
+}
+#message {
+  width: 103%;
+  height: 235px;
+  border-radius: 0.8rem;
+  border: none;
+}
+#btn {
+  padding: 1rem;
+  width: 103.5%;
+  margin-top: 3%;
+  font-size: 120%;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+.maps {
+  margin-top: -41%;
+  margin-left: 59%;
+  width: 40%;
+}
+
+/* responsive */
+@media (max-width: 1670px) {
+  .maps {
+    margin-left: 53.3%;
+    margin-top: -47.6%;
+  }
+  .contact {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .maps {
+    margin-left: 43.3%;
+    margin-top: -57%;
+  }
+  .contact {
+    width: 30%;
+  }
+  .contactus {
+    background-color: #234b6a;
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    margin-top: 5%;
+  }
+  .contactus {
+    background-color: #234b6a;
+  }
+  .contact {
+    width: 70%;
+  }
+  #message {
+   height: 100px;
+  }
+  .contact label {
+    display: flex;
+    padding: -10%;
+  }
+  #btn {
+    display: flex;
+    padding: 5%;
+    margin-top: 10%;
+    align-self: center;
+    font-size: 100%;
+  }
+  .maps {
+    margin-top: 2%;
+    margin-left: 0%;
+  }
+}
+@media (max-width: 822px) {
+  .contactus {
+    background-color: #234b6a;
+  }
+  .contact {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .contactus {
+    background-color: #234b6a;
+  }
+  .contact {
+    width: 60%;
+  }
+}
