@@ -1,0 +1,129 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 100%;
+  line-height: 1.45;
+  color: #333;
+}
+
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+p {
+  text-indent: 20px;
+  text-align: justify;
+}
+
+.button {
+  width: 150px;
+  height: 25px;
+  margin: 5px 0 5px 0;
+  color: #fff;
+  background: #47494d;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: rgba(71, 73, 77, 0.8);
+}
+
+.button:active {
+  margin: 6px inherit 4px inherit;
+  background: rgba(71, 73, 77, 0.8);
+}
+
+/*--- /GENERAL ---*/
+
+#profile-edit-save {
+  box-sizing:border-box;
+  width:800px;
+  margin:0 auto;
+  padding:10px;
+  border-bottom:1px solid #54b7de80;
+  background-color:rgba(84,183,222,0.3);
+}
+
+#editSave {
+  display:block;
+  margin: 0 auto;
+  border:none;
+  border-radius:5px;
+  padding:10px 20px;
+  background-color:#0b1c22;
+  color:#fff;
+  font-size:14px;
+  outline: none;
+}
+.dashboardinfo{
+    background-color: #7997a1;
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(163, 167, 186);
+    padding: 10px;
+}
+.admincontair{
+    display:flex;
+}
+.profile-edit-area {
+  margin: 0 auto;
+  background-color: #7997a1;
+  text-align: left;
+}
+
+#edit-area-left, #edit-area-right {
+  box-sizing:border-box;
+}
+
+#edit-area-left {
+  width:400px;
+  margin:0;
+  float:left;
+}
+
+#edit-area-right {
+  width:400px;
+  margin-left:400px;
+}
+#profile-edit-area {
+  margin: 50px auto 10px;
+}
+
+#profile-edit-area table {
+  margin: 0 auto 10px;
+  vertical-align:top;
+}
+
+#profile-edit-area table tr {
+  vertical-align:top;
+}
+
+.edit-title {
+  padding-top:15px;
+}
+
+.profileInputBox {
+	width:200px;
+  	height:auto;
+  	margin:10px;
+  	padding:10px;
+  	border:none;
+  	border-radius:10px;
+  	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  	background-color:rgb(255, 255, 255);
+  	font-size:16px;
+  	color:rgb(63, 63, 63);
+  	outline: none;
+}
+
+#edit-area-right textarea {
+  height:200px;
+  resize:none;
+}
