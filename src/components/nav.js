@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./nav.css";
 import logo from "../images/logo.png";
 
-import what from "../images/what.png";
 class Nav extends Component {
   render() {
     return (
@@ -46,12 +45,7 @@ class Nav extends Component {
             </ul>
           </nav>
         </header>
-        <div className="whatsapp-icon">
-          <Link to="/dashboard">
-          <img src={what} alt="logo" className="whatsappIcon" />
-
-          </Link>
-        </div>
+        
 
       </div>
     );

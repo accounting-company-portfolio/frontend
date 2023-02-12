@@ -1,104 +1,56 @@
 import { Component } from "react";
 import "../dashboard.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash ,faPenSquare} from '@fortawesome/free-solid-svg-icons'
+import axios from "axios";
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { faTrash ,faPenSquare} from '@fortawesome/free-solid-svg-icons'
 import Sidebar from "../sidebar";
 class Servicecomponent extends Component {
+  state = {
+    services: [],
+  };
+
   componentDidMount() {
-    fetch('https://localhost:5000/services')
-      .then(res => res.json())
-      .then(data => {
-        this.setState({
-          data: data
-        })
+    axios
+      .get("http://localhost:5000/contact/")
+      .then((response) => {
+        this.setState({ services: response.data.response });
       })
-      .catch(error => console.log(error))
+      .catch((error) => {
+        console.error(error);
+      });
   }
+
   render() {
-    
+    const { services } = this.state;
+
     return (
       <div className="container">
-        <div className="maindash">
-          <Sidebar/>
+        <div className="maindash ">
+          <Sidebar />
         </div>
-<section class="dashboard">
-          <div class="top">
-            
-            <div class="search-box">
-              <i class="uil uil-search"></i>
-              <input type="text" placeholder="Search here..." />
-            </div>
+        <table className="contact-msg"> 
+          <tr>
+            <th>Name</th>
+            <th>service icon</th>
+            <th>Message</th>
+          </tr>
 
-            <img src="images/profile.jpg" alt="" />
-          </div>
-
-          <div class="dash-content">
-            <div class="overview">
-              <div class="title">
-                <span class="text">Dashboard</span>
-              </div>
-
-            </div>
-
-            <div class="activity">
-              <div class="activity-data">
-                <div class="data names">
-                  <span class="data-title">ServiceName</span>
-                  <span class="data-list">Prem Shahi</span>
-                  <span class="data-list">Deepa Chand</span>
-                  <span class="data-list">Manisha Chand</span>
-                  <span class="data-list">Pratima Shahi</span>
-                  <span class="data-list">Man Shahi</span>
-                  <span class="data-list">Ganesh Chand</span>
-                  <span class="data-list">Bikash Chand</span>
-                </div>
-                <div class="data email">
-                  <span class="data-title">Email</span>
-                  <span class="data-list">premshahi@gmail.com</span>
-                  <span class="data-list">deepachand@gmail.com</span>
-                  <span class="data-list">prakashhai@gmail.com</span>
-                  <span class="data-list">manishachand@gmail.com</span>
-                  <span class="data-list">pratimashhai@gmail.com</span>
-                  <span class="data-list">manshahi@gmail.com</span>
-                  <span class="data-list">ganeshchand@gmail.com</span>
-                </div>
-                <div class="data joined">
-                  <span class="data-title">Date</span>
-                  <span class="data-list">2022-02-12</span>
-                  <span class="data-list">2022-02-12</span>
-                  <span class="data-list">2022-02-13</span>
-                  <span class="data-list">2022-02-13</span>
-                  <span class="data-list">2022-02-14</span>
-                  <span class="data-list">2022-02-14</span>
-                  <span class="data-list">2022-02-15</span>
-                </div>
-                <div class="data type">
-                  <span class="data-title">Delete</span>
-
-                  <button class="delete"><FontAwesomeIcon icon={faTrash} />&nbsp;&nbsp;Delete</button>
-                  <button class="delete"><FontAwesomeIcon icon={faTrash} />&nbsp;&nbsp;Delete</button>
-                  <button class="delete"><FontAwesomeIcon icon={faTrash} />&nbsp;&nbsp;Delete</button>
-                  <button class="delete"><FontAwesomeIcon icon={faTrash} />&nbsp;&nbsp;Delete</button>
-                  <button class="delete"><FontAwesomeIcon icon={faTrash} />&nbsp;&nbsp;Delete</button>
-                  <button class="delete"><FontAwesomeIcon icon={faTrash} />&nbsp;&nbsp;Delete</button>
-                  <button class="delete"><FontAwesomeIcon icon={faTrash} />&nbsp;&nbsp;Delete</button>
-
-                </div>
-                <div class="data status">
-                  <span class="data-title">Edit</span>
-                  <button class="edit"><FontAwesomeIcon icon={faPenSquare} />Edit</button>
-                  <button class="edit"><FontAwesomeIcon icon={faPenSquare} />Edit</button>
-                  <button class="edit"><FontAwesomeIcon icon={faPenSquare} />Edit</button>
-                  <button class="edit"><FontAwesomeIcon icon={faPenSquare} />Edit</button>
-                  <button class="edit"><FontAwesomeIcon icon={faPenSquare} />Edit</button>
-                  <button class="edit"><FontAwesomeIcon icon={faPenSquare} />Edit</button>
-                  <button class="edit"><FontAwesomeIcon icon={faPenSquare} />Edit</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        </div>
-    )}};
-
+          {services.map((service) => (
+            <tr key={service.id}>
+              <td className="msg-name"> {service.name}</td>
+              <td className="msg-email"> {service.ImageIcon}</td>
+              <td className="msg-text"></td>
+            </tr>
+          ))}
+        </table>
+        <table className="crud-buttons">
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    );
+  }
+}
+    
     export default Servicecomponent;

@@ -38,13 +38,13 @@ class News extends Component {
                       <table>
                         <tbody>
                           <tr>
-                            <td class="edit-title">Name:</td>
+                            <td className="edit-title">Name:</td>
                             <td>
                               <input type="text" className="profileInputBox" />
                             </td>
                           </tr>
                           <tr>
-                            <td class="edit-title">choose your Media Type:</td>
+                            <td className="edit-title">choose your Media Type:</td>
                             <td>
                               <select id="media" name="mediafiles">
                                 <option value="image">image</option>

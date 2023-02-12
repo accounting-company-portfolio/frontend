@@ -41,10 +41,10 @@ class Login extends Component {
   render() {
     return (
       <div className="page_container">
-        <div class="login-box">
+        <div className="login-box">
           <h2>Login</h2>
           <form onSubmit={this.handleSubmit}>
-            <div class="user-box">
+            <div className="user-box">
               <input
                 type="text"
                 name="email"
@@ -53,7 +53,7 @@ class Login extends Component {
               />
               <label>Email</label>
             </div>
-            <div class="user-box">
+            <div className="user-box">
               <input
                 type="password"
                 name="password"

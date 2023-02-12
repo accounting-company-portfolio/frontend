@@ -13,11 +13,15 @@ import Servicescard from "./pages/Services/servicescard.js";
 import Servicecomponent from "./pages/Dashboard/servicecomponent/servicecomponent";
 import Adminprofile from "./pages/Dashboard/admineditprofile/adminprofile";
 import Login from "./pages/Login/login";
+import  Addadmin  from "./pages/Dashboard/admineditprofile/addadmin.js"
+import Whatsapp from "./components/waht";
 import { Component } from "react";
 class App extends Component {
   render() {
     return (
+      
       <div className="page_container">
+       
         <Nav />
 
         <br></br>
@@ -33,6 +37,8 @@ class App extends Component {
           <Route path="/servicecomponent" element={<Servicecomponent />} />
           <Route path="/profile" element={<Adminprofile />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/addadmin" element={< Addadmin  />} />
+
         </Routes>
         <br />
         <br />
@@ -44,6 +50,7 @@ class App extends Component {
         <br />
 
         <Footer />
+        <Whatsapp/>
       </div>
     );
   }
