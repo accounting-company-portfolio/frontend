@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-size: 1.45rem;
 font-family: 'Lusitana', serif;
   padding: 0;
   font-family: sans-serif;
@@ -8,6 +7,15 @@ font-family: 'Lusitana', serif;
     center/cover  no-repeat ;
   overflow-wrap: hidden;
   
+}
+@import url('https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Lusitana:wght@400;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,700&display=swap');
+.page_container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex:1;
+  font-size: 1.05rem;
+
 }
 
 .logo {
