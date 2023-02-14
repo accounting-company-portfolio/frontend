@@ -26,19 +26,25 @@ export const ContactUs = () => {
   };
 
   return (
+    
     <div className="contactus">
-      <div className="container">
+      <div className="containercontact">
         <div>
           <h3>Contact us</h3>
         </div>
-        <div className="form">
+        <div className="form-contact">
           <form className="contact" ref={form} onSubmit={sendEmail}>
             <label for="name">Name</label>
             <input name="your name" type="text" id="name" required />
             <label for="email">Email</label>
             <input name="your email" type="email" id="email" required />
-            <label for="message">message</label>
-            <textarea name="message" type="text" id="message" required />
+            <label for="message-contact">message</label>
+            <textarea
+              name="message-contact"
+              type="text"
+              id="message-contact"
+              required
+            />
             <button type="submit" value="Submit" id="btn">
               Send your message
             </button>
@@ -46,7 +52,7 @@ export const ContactUs = () => {
         </div>
       </div>
       <div className="maps">
-        <iframe
+        <iframe 
           src="https://www.google.com/maps/d/embed?mid=13dBE989HrUCM2vVH8I4QuxygL5Q&hl=en_US&ehbc=2E312F"
           width="750"
           height="765"

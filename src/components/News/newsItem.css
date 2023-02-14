@@ -21,12 +21,16 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.news-back {
+  background-color: aliceblue;
+}
 .news-card {
   width: 25%;
+  background-image: url("https://images.unsplash.com/photo-1530293959042-0aac487c21e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZSUyMGFuZCUyMHdoaXRlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  box-shadow: 0 8px 16px 0 rgba(74, 58, 221, 0.2);
+
   margin: 20px;
   padding: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease-in-out;
   border-radius: 5px;
 }

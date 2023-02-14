@@ -27,18 +27,14 @@ class Nav extends Component {
                   About
                 </Link>
               </li>
-              <li>
-                <Link to="/dashboard" className="hoverable">
-                  Dashboard
-                </Link>
-              </li>
+             
               <li>
                 <Link to="/news" className="hoverable">
                   News
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hoverable">
+                <Link to="/maincontact" className="hoverable">
                   Contact
                 </Link>
               </li>

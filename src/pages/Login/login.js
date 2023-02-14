@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "./login.css";
 
@@ -6,28 +7,28 @@ class Login extends Component {
   state = {
     email: "",
     password: "",
-    token: ""
+    token: "",
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
 
     const userData = {
       email: this.state.email,
-      password: this.state.password
+      password: this.state.password,
     };
 
     axios
       .post("http://localhost:5000/login", userData)
-      .then(res => {
+      .then((res) => {
         this.setState({ token: res.data.token });
         localStorage.setItem("token", res.data.token);
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   };
 
   componentDidMount() {
@@ -62,7 +63,9 @@ class Login extends Component {
               />
               <label>Password</label>
             </div>
-            <button type="submit">Login</button>
+            <Link to="/dashboard" className="hoverable">
+              Login
+            </Link>
           </form>
         </div>
       </div>

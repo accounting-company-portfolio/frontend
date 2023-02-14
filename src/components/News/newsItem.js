@@ -21,7 +21,8 @@ class NewsItem extends Component {
 
   render() {
     return (
-      <div>
+      <div className="page-container">
+        <div className="news-back">
         <h1>News</h1>
         <div className="news-section">
           {this.state.newsData ? (
@@ -36,9 +37,10 @@ class NewsItem extends Component {
               </div>
             ))
           ) : (
-            <h1>No News</h1>
+            <h1>News</h1>
           )}
         </div>
+      </div>
       </div>
     );
   }

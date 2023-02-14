@@ -3,11 +3,11 @@ import "./App.css";
 import Nav from "./components/nav.js";
 import Footer from "./components/footer/footer.js";
 import { Route, Routes } from "react-router-dom";
-import Homepage from "./pages/Home/home.js";
+import Home from "./components/Home/home.js";
 import ImageSlider from "./pages/Services/serviceApp.js";
-import News from "./pages/News/news.js";
+import NewsItem from "./components/News/newsItem";
 import ContactUs from "./pages/Contact Us/contactUs.js";
-import About from "./pages/About/about.js";
+import About from "./components/About US/about";
 import Dashboard from "./pages/Dashboard/dashboard.js";
 import Messages from "./pages/Dashboard/message/message.js";
 import Servicescard from "./pages/Services/servicescard.js";
@@ -16,6 +16,7 @@ import Adminprofile from "./pages/Dashboard/admineditprofile/adminprofile";
 import Login from "./pages/Login/login";
 import Addadmin from "./pages/Dashboard/admineditprofile/addadmin.js"
 import Whatsapp from "./components/waht";
+import Maincontactus from "./pages/Contact Us/main-contact";
 import { Component } from "react";
 class App extends Component {
 render() {
@@ -25,11 +26,10 @@ return (
 
 <br></br>
 <Routes>
-<Route path="/" element={<Homepage />} />
+<Route path="/" element={<Home />} />
 <Route path="/services" element={<ImageSlider />} />
 <Route path="/about" element={<About />} />
 <Route path="/dashboard" element={<Dashboard />} />
-<Route path="/news" element={<News />} />
 <Route path="/contact us" element={<ContactUs />} />
 <Route path="/messages" element={<Messages />} />
 <Route path="/card" element={<Servicescard />} />
@@ -37,6 +37,8 @@ return (
 <Route path="/profile" element={<Adminprofile />} />
 <Route path="/login" element={<Login />} />
 <Route path="/addadmin" element={< Addadmin />} />
+<Route path="/maincontact" element={< Maincontactus />} />
+<Route path="/news" element={<NewsItem />} />
 
 </Routes>
 <br />
@@ -48,7 +50,6 @@ return (
 <br />
 <br />
 {/* <div className="App"> */}
-    <ContactUs />
   {/* </div> */}
 <Footer />
 <Whatsapp/>

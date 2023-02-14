@@ -72,11 +72,11 @@ class Sidebar extends Component {
   <hr />
   <ul className="logout-mode">
     <li>
-      <a href="/">
+    <Link to="/">
         <FontAwesomeIcon icon={faSignOut} />
         &nbsp;&nbsp;
         <span className="link-name">Logout</span>
-      </a>
+      </Link>
     </li>
   </ul>
 </div>

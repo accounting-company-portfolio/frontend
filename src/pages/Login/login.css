@@ -1,32 +1,32 @@
-
 body {
   margin: 0;
   padding: 0;
-  display:flex;
+  display: flex;
   font-family: sans-serif;
-  background: url(https://img.freepik.com/free-vector/abstract-flowing-lines-background-2803_1048-7818.jpg?w=2000) center
-  center/cover  no-repeat ;
-    overflow-wrap:hidden ;
+  background: url(https://img.freepik.com/free-vector/abstract-flowing-lines-background-2803_1048-7818.jpg?w=2000)
+    center center/cover no-repeat;
+  overflow-wrap: hidden;
 }
 
 .login-box {
   position: absolute;
   top: 60%;
   left: 50%;
-  width: 550px;
+  width: 650px;
   padding: 40px;
+
+  font-size: 20px;
   transform: translate(-50%, -50%);
-  background-color:#95745ac2;
+  background-image: url("https://www.insentragroup.com/au/wp-content/uploads/sites/22/2021/02/insentra_hughroberts_06102020_2_featured.jpg");
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .login-box h2 {
   margin: 0 0 30px;
   padding: 0;
-  color: #09091c
-  ;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -38,7 +38,7 @@ body {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color:#000000;
+  color: #ffffff;
   margin-bottom: 30px;
   border: none;
   border-bottom: 1px solid #fff;
@@ -54,15 +54,14 @@ body {
   color: #09091c;
   pointer-events: none;
   transition: 0.5s;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #09091c;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 700px;
 }
@@ -71,7 +70,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #09091c;
+  color: #ffffff;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -82,23 +81,9 @@ body {
 }
 
 .login-box a:hover {
-  background: #4d4f99
-  ;
+  background: #4d4f99;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #6b66a8
-  , 0 0 25px #4c69d0, 0 0 50px #4c69d0,
+  box-shadow: 0 0 5px #6b66a8, 0 0 25px #4c69d0, 0 0 50px #4c69d0,
     0 0 100px #4c69d0;
 }
-
-
-
-
-
-
-
-
-
-
-
-

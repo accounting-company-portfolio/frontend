@@ -3,24 +3,30 @@
 }
 .contactus {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding-left: 181px;
+    align-items: center;
 }
-.container {
+.containercontact {
   font-size: 110%;
   display: flex;
   flex-direction: column;
   margin-top: 5%;
-  background-color: #234b6a;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: #81909c;
   background-size: auto;
 }
-.container h3 {
-  font-size: 170%;
-  margin-right: 90%;
+.containercontact h3 {
+  font-size: 20px;
+ 
 }
 .contact {
-  width: 50%;
   padding: 4em;
-  background-color: #47494d;
+  color:aliceblue;
+  font-weight: 500px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background-image: url("https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?b=1&s=170667a&w=0&k=20&c=2sJEN1Hhg6heUi1ZxKs6pJDwcyLYXPc4pUGd3hEjOjE=");
 }
 .contact label {
   display: flex;
@@ -35,7 +41,7 @@
   border-radius: 0.8rem;
   border: none;
 }
-#message {
+#message-contact {
   width: 103%;
   height: 235px;
   border-radius: 0.8rem;
@@ -52,8 +58,11 @@
 }
 
 .maps {
-  margin-top: -41%;
-  margin-left: 59%;
+  position: relative;
+  top: 35px;
+  right: -122px;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   width: 40%;
 }
 
@@ -81,7 +90,7 @@
   }
 }
 @media (max-width: 1300px) {
-  .container {
+  .container-contact {
     margin-top: 5%;
   }
   .contactus {
@@ -90,8 +99,8 @@
   .contact {
     width: 70%;
   }
-  #message {
-   height: 100px;
+  #message-contact {
+    height: 100px;
   }
   .contact label {
     display: flex;
