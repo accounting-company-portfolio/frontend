@@ -1,21 +1,21 @@
 body {
   margin: 0;
-font-family: 'Lusitana', serif;
+  font-family: "Lusitana", serif;
   padding: 0;
   font-family: sans-serif;
-  background: url(https://img.freepik.com/free-vector/abstract-flowing-lines-background-2803_1048-7818.jpg?w=2000) center
-    center/cover  no-repeat ;
+  background: url(https://img.freepik.com/free-vector/abstract-flowing-lines-background-2803_1048-7818.jpg?w=2000)
+    center center/cover no-repeat;
   overflow-wrap: hidden;
-  
 }
-@import url('https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Lusitana:wght@400;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,700&display=swap');
-.page_container{
+
+@import url("https://fonts.googleapis.com/css2?family=Buenard:wght@400;700&family=Lusitana:wght@400;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,700&display=swap");
+
+.page_container {
   display: flex;
   flex-direction: column;
   min-height: 130vh;
-  flex:1;
+  flex: 1;
   font-size: 1.05rem;
-
 }
 
 .logo {
@@ -23,17 +23,16 @@ font-family: 'Lusitana', serif;
   height: 130px;
   margin-top: 10px;
 }
+
 nav {
   display: flex;
-  font-family: 'Lusitana', serif;
- 
-
+  font-family: "Lusitana", serif;
+  flex-wrap: nowrap;
   top: 0;
   width: 100%;
   align-items: center;
   background-color: #234b6a;
   box-shadow: 5px 5px 78px 1px rgba(0, 0, 0, 0.768) inset;
-  
   justify-content: space-around;
   height: 13vh;
 }
@@ -47,7 +46,6 @@ nav {
   align-items: center;
   justify-content: flex-end;
   list-style-type: none;
- 
 }
 
 .hoverable {
@@ -82,6 +80,7 @@ nav {
 .hoverable:focus {
   transform: translateY(-5px);
 }
+
 .hoverable:hover:before,
 .hoverable:active:before,
 .hoverable:focus:before {
@@ -89,51 +88,17 @@ nav {
   transform: translateY(-5px);
 }
 
-@media screen and (max-width: 768px) {
-  .nav__toggler {
-    display: block;
-    cursor: pointer;
-  }
-  .nav__menu {
-    position: fixed;
-    top: 7vh;
-    right: 0;
-    height: 93vh;
-    width: 50vw;
-    background: rgb(0, 33, 65);
-    flex-direction: column;
-    transform: translateX(100%);
-    transition: 0.5s ease-in;
-  }
-}
-/* Active Class */
-.nav__active {
-  transform: translateX(0%);
-}
-
-/* Toggle Icon Animation */
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-4px, 5px);
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-4px, -5px);
-}
-
-
-.whatsappIcon{
-  position:fixed;
-	width:60px;
-	height:60px;
-	bottom:46px;
-	right:44px;
+.whatsappIcon {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 46px;
+  right: 44px;
   box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
-border-radius: 50%;
+  border-radius: 50%;
 }
-.whatsappIcon:hover{
+
+.whatsappIcon:hover {
   filter: contrast(251%);
   filter: saturate(300%);
 }

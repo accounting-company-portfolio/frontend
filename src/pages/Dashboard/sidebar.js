@@ -43,7 +43,7 @@ class Sidebar extends Component {
           to="/profile">
       <FontAwesomeIcon icon={faUser} />
       &nbsp;&nbsp;
-          Info
+         Admin
         </Link>
      
     </li>

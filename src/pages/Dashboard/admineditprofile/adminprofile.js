@@ -44,7 +44,7 @@ class Adminprofile extends Component {
 
             {data.map((admin) => (
               <tr key={admin.id}>
-                <td className="msg-name"> {admin.FirstName}{admin.LastName}</td>
+                <td className="msg-name"> {admin.FirstName}&nbsp;{admin.LastName}</td>
                 <td className="msg-email"> {admin.email}</td>
                 <td className="msg-text">({admin.password})</td>
               </tr>

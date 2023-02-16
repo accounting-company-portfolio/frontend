@@ -127,3 +127,11 @@ p {
   height:200px;
   resize:none;
 }
+
+@media (max-width: 767px) {
+  #edit-area-left, #edit-area-right {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+}

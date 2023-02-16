@@ -5,6 +5,10 @@ import { faPenSquare } from "@fortawesome/free-solid-svg-icons";
 import "../dashboard.css";
 class Addadmin extends Component {
   state = {
+    FirstnName: "",
+    LastName: "",
+    email: "",
+    password: "",
     admins: [],
   };
 
@@ -17,14 +21,15 @@ class Addadmin extends Component {
   };
 
   handleChange = (e) => {
-    this.setState({ [e.target.FirstName]: e.target.value });
+    this.setState({ [e.target.name]: e.target.value });
   };
 
   handleSubmit = (e) => {
     e.preventDefault();
     const { FirstName, LastName, email, password } = this.state;
+    
     axios
-      .post("http://localhost:5000/dasboard/add", {
+      .post("http://localhost:5000/dashboard/register", {
         FirstName,
         LastName,
         email,
@@ -34,6 +39,7 @@ class Addadmin extends Component {
         this.setState({
           admins: [...this.state.admins, response.data.response],
         });
+        alert("Hello New ADMIN!");
       })
       .catch((error) => {
         console.error(error);
@@ -58,6 +64,8 @@ class Addadmin extends Component {
                   {" "}
                   <input
                     type="text"
+                    name="FirstName"
+                    value={this.state.FirstName}
                     FirstName="FirstName"
                     onChange={this.handleChange}
                     placeholder="Name"
@@ -71,6 +79,7 @@ class Addadmin extends Component {
               <td>
                 <input
                   type="text"
+                  name="LastName"
                   LastName="LastName"
                   onChange={this.handleChange}
                   placeholder="lastname"
@@ -86,6 +95,7 @@ class Addadmin extends Component {
                   <input
                     type="email"
                     email="email"
+                    name="email"
                     onChange={this.handleChange}
                     placeholder="Email"
                     className="profileInputBox"
@@ -99,6 +109,7 @@ class Addadmin extends Component {
                 <td>
                   <input
                     type="password"
+                    name="password"
                     password="password"
                     onChange={this.handleChange}
                     placeholder="put your password"
@@ -111,7 +122,7 @@ class Addadmin extends Component {
                 <td>
                   {" "}
                   <button type="submit" className="btn">
-                    <FontAwesomeIcon icon={faPenSquare} />
+                    <FontAwesomeIcon icon={faPenSquare} onClick={this.handleSubmit} />
                     Submit
                   </button>
                 </td>

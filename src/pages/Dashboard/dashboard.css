@@ -57,8 +57,7 @@ a:active {
   color: rgb(0, 0, 0);
   border-right: 1px solid black;
   align-items: center;
-  height: 760px;
-  width: 300px;
+  height: auto;
   padding: 42px;
   font-family: "Lusitana", serif;
 
@@ -259,95 +258,6 @@ nav.close ~ .dashboard {
 }
 .logout-mode {
   padding-top: 22px;
-}
-
-@media (max-width: 1000px) {
-  nav {
-    width: 73px;
-  }
-  nav.close {
-    width: 250px;
-  }
-  nav .logo_name {
-    opacity: 0;
-    pointer-events: none;
-  }
-  nav.close .logo_name {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  nav li a .link-name {
-    opacity: 0;
-    pointer-events: none;
-  }
-  nav.close li a .link-name {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  nav ~ .dashboard {
-    left: 73px;
-    width: calc(100% - 73px);
-  }
-  nav.close ~ .dashboard {
-    left: 250px;
-    width: calc(100% - 250px);
-  }
-  nav ~ .dashboard .top {
-    left: 73px;
-    width: calc(100% - 73px);
-  }
-  nav.close ~ .da {
-    width: calc(100% - 250px);
-  }
-  .activity .activity-data {
-    overflow-x: scroll;
-  }
-
-  .dash-content .boxes .box {
-    width: calc(100% / 2 - 15px);
-    margin-top: 15px;
-  }
-
-  @media (max-width: 400px) {
-    nav {
-      width: 0px;
-    }
-    nav.close {
-      width: 73px;
-    }
-    nav .logo_name {
-      opacity: 0;
-      pointer-events: none;
-    }
-    nav.close .logo_name {
-      opacity: 0;
-      pointer-events: none;
-    }
-    nav li a .link-name {
-      opacity: 0;
-      pointer-events: none;
-    }
-    nav.close li a .link-name {
-      opacity: 0;
-      pointer-events: none;
-    }
-    nav ~ .dashboard {
-      left: 0;
-      width: 100%;
-    }
-    nav.close ~ .dashboard {
-      left: 73px;
-      width: calc(100% - 73px);
-    }
-    nav ~ .dashboard .top {
-      left: 0;
-      width: 100%;
-    }
-    nav.close ~ .dashboard .top {
-      left: 0;
-      width: 100%;
-    }
-  }
 }
 
 body {
@@ -617,7 +527,97 @@ td {
   box-shadow: 0px 5px 97px 18px #000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.maincontainer{
+.maincontainer {
   display: flex;
   width: auto;
+}
+.boxs-dash {
+  display: flex;
+  flex-direction: row;
+}
+.bo1 {
+  border: none;
+  background-color: #f1e5d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  margin: 12px;
+  width: 200px;
+}
+.min-bo1 {
+  background-color: rgb(80, 97, 194);
+  position: relative;
+  width: 100%;
+  top: 0;
+  height: 50%;
+  padding: 20px;
+  text-align: center;
+}
+.min-bo2 {
+  background-color: rgb(201, 70, 70);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+
+  padding: 20px;
+  text-align: center;
+}
+.min-bo3 {
+  background-color: rgb(43, 181, 205);
+  position: relative;
+  top: 0;
+  height: 50%;
+
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.min-bo4 {
+  background-color: rgb(209, 223, 80);
+  position: relative;
+  top: 0;
+  height: 50%;
+
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.min-bo1:hover {
+  background-color: rgb(162, 190, 228);
+  cursor: pointer;
+}
+.min-bo2:hover {
+  background-color: rgb(162, 190, 228);
+  cursor: pointer;
+}
+.min-bo3:hover {
+  background-color: rgb(162, 190, 228);
+  cursor: pointer;
+}
+.min-bo4:hover {
+  background-color: rgb(162, 190, 228);
+  cursor: pointer;
+}
+i {
+  height: 100px;
+  width: 100px;
+}
+.container2 {
+  display: flex;
+  justify-items: center;
+  flex-direction: row;
+  align-items: center;
+}
+.maind {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notes2 > .note {
+  text-align: center;
+  font-size: 23px;
+  padding: 33px;
+  white-space: pre-wrap;
 }
